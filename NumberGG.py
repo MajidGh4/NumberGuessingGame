@@ -12,14 +12,14 @@ while a!= num:
         print('Try Again! You guessed too high')
         a=int(input('Enter a lower number: '))
         Guess_Counter += 1
-        if (Guess_Counter == Minimum_Guesses):
+        if (Guess_Counter == Minimum_Guesses+1):
             print('Better Luck Next Time')
             break
     else:
         print('Try Again! You guessed too small')
         a=int(input('Enter a biger number: '))
         Guess_Counter += 1
-        if (Guess_Counter == Minimum_Guesses):
+        if (Guess_Counter == Minimum_Guesses+1):
             print('Better Luck Next Time')
             break
 if a == num:
